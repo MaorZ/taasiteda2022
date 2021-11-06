@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Draw Something - Game Time!</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      var exports = { __esModule: true }
+    </script>
+
+    <script type="module" src="../../lib/canvas-free-drawing.js"></script>
+    <script type="module" src="./game.js"></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h2>Your Score: <span class="score_label"></span></h2>
+      <h2>Currect Drawer is: <span class="current_drawer_label"></span></h2>
+
+      <div class="draw-section">
+        <div class="draw-container">
+          <canvas id="drawCanvas" class="canvas draw_canvas"></canvas>
+          <img class="canvas show_canvas" />
+        </div>
+      </div>
+      <div class="paroles">
+        <div>
+          My Word is: <span class="my_word_label"></span>
+          <button class="clear-btn">Clear</button>
+        </div>
+        <div class="guessed-word">
+          <label>
+            What is it?...
+            <input type="text" class="word_input" />
+          </label>
+          <button class="send_btn">Send!</button>
+        </div>
+      </div>
+      <a href="./status.html">Game Status</a>
+    </div>
+  </body>
+</html>
